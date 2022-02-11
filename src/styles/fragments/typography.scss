@@ -1,0 +1,131 @@
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: $white;
+    line-height: 1.1;
+    font-weight: 400;
+
+    &.is-arcade{
+        font-family: $arcade-f;
+        line-height: 0.8;
+    }
+}
+
+h1, .h1 {
+    @include fontsize(4.8rem, 4.8rem, 5.5rem);
+
+
+    &.is-arcade{
+        @include fontsize(12rem, 17rem, 21rem);
+    }
+}
+
+h2, .h2 {
+    @include fontsize(4rem, 4rem, 4.8rem);
+
+
+    &.is-arcade{
+        @include fontsize(12rem, 17rem, 21rem);
+    }
+}
+
+h3, .h3 {
+    @include fontsize(3.8rem, 3.8rem, 4.2rem);
+
+
+    &.is-arcade{
+        @include fontsize(8rem, 10rem, 13rem);
+    }
+}
+
+h4, .h4  {
+    @include fontsize(3.2rem, 3.2rem, 3.8rem);
+}
+
+h5, .h5 {
+    @include fontsize(2.8rem, 2.8rem, 3.4rem);
+}
+
+h6, .h6 {
+    @include fontsize(2.8rem, 2.8rem, 3rem);
+}
+
+p, ul{
+    margin: 0.5rem 0;
+    font-family: $nokia-f;
+    color: $white;
+    @include fontsize(1.8rem, 2.6rem, 2.6rem);
+
+    &.is-white {
+        color: $white;
+    }
+
+    &.is-small {
+        @include fontsize(1.7rem, 2rem, 2rem);
+    }
+
+    &.is-medium {
+        @include fontsize(2.2rem, 2.2rem, 2.2rem);
+    }
+    
+
+    &.is-big {
+        @include fontsize(2.2rem, 2.2rem, 3rem);
+        @include lineheight(3.2rem, 3.2rem, 4rem);
+    }
+
+    &.is-extra-big {
+        @include fontsize(3rem, 3rem, 3rem);
+        @include lineheight(4rem, 4rem, 4rem);
+    }
+
+    &.is-cursive { 
+        font-style: italic;
+    }
+    
+    &.is-bold {
+        font-weight: 600;
+    }
+
+    a{
+        font-size: inherit;
+        color: inherit;
+        font-family: inherit;
+        text-decoration: underline;
+    }
+}
+
+a{
+    font-family: $nokia-f;
+    @include fontsize(1.8rem, 1.8rem, 1.8rem);
+}
+
+/**
+ * colors
+ */
+.is-yellow{
+    color: $yellow;
+}
+.is-green{
+    color: $green;
+}
+.is-aqua{
+    color: $aqua;
+}
+.is-pink{
+    color: $pink;
+}
+
+
+/**
+ * Helper classes
+ */
+
+.is-text-center {
+    text-align: center;
+}

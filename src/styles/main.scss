@@ -1,0 +1,18 @@
+
+@import './global.scss';
+
+@import './helpers/mixins.scss';
+
+// fragments
+@import './fragments/typography.scss';
+
+// components
+@import './navigation/main-nav.scss';
+@import './navigation/main-footer.scss';
+
+@import './components/hero.scss';
+@import './components/about.scss';
+@import './components/gape-strip.scss';
+@import './components/faqs.scss';
+@import './components/roadmap.scss';
+@import './components/team.scss';

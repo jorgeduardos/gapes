@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Nokia, sans-serif';
+    src: url('../assets/fonts/nokiafc22.woff2');
+}
+
+@font-face {
+    font-family: 'Arcade, sans-serif';
+    src: url('../assets/fonts/8-bit-arcade-out.woff2');
+}
+
+//fonts
+$nokia-f: 'Nokia, sans-serif';
+$arcade-f: 'Arcade, sans-serif';
+
+/*-----------------------------------*\
+    COLOR VARS
+\*-----------------------------------*/
+$yellow: rgb(254, 216, 3);
+$aqua: rgb(3, 254, 168);
+$green: rgb(157, 254, 3);
+$pink: rgb(254, 3, 162);
+$black: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+
+/*-----------------------------------*\
+    BREAKPOINTS IN CORRECT ORDER
+\*-----------------------------------*/
+
+$mobile-small-BP: 400px;
+$mobile-BP: 640px;
+$tablet-BP: 768px;
+$tablet-big-BP: 900px;
+$desktop-BP: 1024px;
+$desktop-big-BP: 1200px;
+$desktop-extra-big-BP: 1366px;
+$desktop-max-big-BP: 1600px;
+
+/*-----------------------------------*\
+    UNIVERSAL
+\*-----------------------------------*/
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    font-weight: 400;
+    font-family: $nokia-f;
+
+    margin: 0;
+    border: none;
+    // background: linear-gradient(to bottom, #010068, #010038);
+
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: $black;
+
+        section:nth-child(1){
+            padding-top: 0;
+        }
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+}
+
+/*-----------------------------------*\
+    GLOBAL PADDINGS
+\*-----------------------------------*/
+section{
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media screen and (min-width: $mobile-BP){
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+    &.is-full {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
