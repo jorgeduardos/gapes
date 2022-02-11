@@ -2,7 +2,7 @@
   "name": "gapes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jorgeduardos.github.io/",
+  "homepage": "https://jorgeduardos.github.io/gapes/",
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.16.2",
