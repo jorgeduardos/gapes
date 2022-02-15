@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/gapes/static/css/main.37d3e3f1.css",
-    "main.js": "/gapes/static/js/main.72e9a047.js",
+    "main.css": "/gapes/static/css/main.b96e18cc.css",
+    "main.js": "/gapes/static/js/main.214ad50e.js",
     "static/js/787.5ece8f8d.chunk.js": "/gapes/static/js/787.5ece8f8d.chunk.js",
     "static/media/city.mp3": "/gapes/static/media/city.30ada1b23a6ffbaf6408.mp3",
     "static/media/homepage-hero-video.mp4": "/gapes/static/media/homepage-hero-video.2f6cc7289e4922ad487e.mp4",
     "static/media/monkes-hero-video.mp4": "/gapes/static/media/monkes-hero-video.a8e9ee258ab1ffc0c31b.mp4",
+    "static/media/apes_monkes_right.png": "/gapes/static/media/apes_monkes_right.faf935c1fd789058ac8e.png",
+    "static/media/apes_monkes_left.png": "/gapes/static/media/apes_monkes_left.9d3d34e35bff1f6c0b3d.png",
     "static/media/kyle.png": "/gapes/static/media/kyle.52b986128281ef912e7c.png",
     "static/media/genesis.png": "/gapes/static/media/genesis.e6e6b8d3022ef26bd4d0.png",
     "static/media/gape-6.png": "/gapes/static/media/gape-6.55af4359e233ca94d909.png",
@@ -27,12 +29,12 @@
     "static/media/twitter-fill.svg": "/gapes/static/media/twitter-fill.3489cfdf20612eabffc87537b4fc7b6e.svg",
     "static/media/twitter.svg": "/gapes/static/media/twitter.ecb1dcb5dd12a12dbbbd941377fd2c0f.svg",
     "index.html": "/gapes/index.html",
-    "main.37d3e3f1.css.map": "/gapes/static/css/main.37d3e3f1.css.map",
-    "main.72e9a047.js.map": "/gapes/static/js/main.72e9a047.js.map",
+    "main.b96e18cc.css.map": "/gapes/static/css/main.b96e18cc.css.map",
+    "main.214ad50e.js.map": "/gapes/static/js/main.214ad50e.js.map",
     "787.5ece8f8d.chunk.js.map": "/gapes/static/js/787.5ece8f8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.37d3e3f1.css",
-    "static/js/main.72e9a047.js"
+    "static/css/main.b96e18cc.css",
+    "static/js/main.214ad50e.js"
   ]
 }
