@@ -55,7 +55,7 @@ h6, .h6 {
     @include fontsize(2.8rem, 2.8rem, 3rem);
 }
 
-p, ul{
+p, ul, ol{
     margin: 0.5rem 0;
     font-family: $nokia-f;
     color: $white;
