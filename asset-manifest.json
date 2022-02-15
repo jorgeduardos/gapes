@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/gapes/static/css/main.14ffe5ce.css",
-    "main.js": "/gapes/static/js/main.93f591e6.js",
+    "main.css": "/gapes/static/css/main.df68a4e9.css",
+    "main.js": "/gapes/static/js/main.3971156d.js",
     "static/js/787.5ece8f8d.chunk.js": "/gapes/static/js/787.5ece8f8d.chunk.js",
     "static/media/city.mp3": "/gapes/static/media/city.30ada1b23a6ffbaf6408.mp3",
     "static/media/homepage-hero-video.mp4": "/gapes/static/media/homepage-hero-video.2f6cc7289e4922ad487e.mp4",
     "static/media/monkes-hero-video.mp4": "/gapes/static/media/monkes-hero-video.a8e9ee258ab1ffc0c31b.mp4",
     "static/media/kyle.png": "/gapes/static/media/kyle.52b986128281ef912e7c.png",
-    "static/media/cargo-scene.gif": "/gapes/static/media/cargo-scene.82901fde2c9e9dbefe6c.gif",
-    "static/media/spacechip-scene.gif": "/gapes/static/media/spacechip-scene.c06dcc0d2e86a0d01923.gif",
+    "static/media/genesis.png": "/gapes/static/media/genesis.e6e6b8d3022ef26bd4d0.png",
     "static/media/gape-6.png": "/gapes/static/media/gape-6.55af4359e233ca94d909.png",
     "static/media/dots.png": "/gapes/static/media/dots.4715cb958acd68ed972b.png",
+    "static/media/baldie.png": "/gapes/static/media/baldie.fa7e043384e4d418a9e4.png",
     "static/media/gape-1.png": "/gapes/static/media/gape-1.4815b5ba5a7cee074722.png",
     "static/media/biggie.png": "/gapes/static/media/biggie.20a3fd43fddeb849531a.png",
     "static/media/dilly-b.png": "/gapes/static/media/dilly-b.ff1a2dc04c7ef9e4e6ac.png",
-    "static/media/landing-scene.gif": "/gapes/static/media/landing-scene.5f0763a4e464c64de3dd.gif",
     "static/media/footer-gapes.png": "/gapes/static/media/footer-gapes.33ed8fe3fd5d43542cb6.png",
     "static/media/scrap.png": "/gapes/static/media/scrap.e2e7a377c9df49ec81aa.png",
     "static/media/no-laser-gape.png": "/gapes/static/media/no-laser-gape.4d2f61e29e16df235b74.png",
     "static/media/res.png": "/gapes/static/media/res.4222438c4bda76688e54.png",
+    "static/media/planet.png": "/gapes/static/media/planet.aa81199b45d604dc0a9f.png",
     "static/media/8-bit-arcade-out.woff2": "/gapes/static/media/8-bit-arcade-out.fd82c2e1ec3fadf680bc.woff2",
     "static/media/nokiafc22.woff2": "/gapes/static/media/nokiafc22.cbac987916e171516f9d.woff2",
     "static/media/opensea.svg": "/gapes/static/media/opensea.b62208b1d53f89d2811e7ee46f4cf94d.svg",
@@ -26,12 +26,12 @@
     "static/media/twitter-fill.svg": "/gapes/static/media/twitter-fill.3489cfdf20612eabffc87537b4fc7b6e.svg",
     "static/media/twitter.svg": "/gapes/static/media/twitter.ecb1dcb5dd12a12dbbbd941377fd2c0f.svg",
     "index.html": "/gapes/index.html",
-    "main.14ffe5ce.css.map": "/gapes/static/css/main.14ffe5ce.css.map",
-    "main.93f591e6.js.map": "/gapes/static/js/main.93f591e6.js.map",
+    "main.df68a4e9.css.map": "/gapes/static/css/main.df68a4e9.css.map",
+    "main.3971156d.js.map": "/gapes/static/js/main.3971156d.js.map",
     "787.5ece8f8d.chunk.js.map": "/gapes/static/js/787.5ece8f8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14ffe5ce.css",
-    "static/js/main.93f591e6.js"
+    "static/css/main.df68a4e9.css",
+    "static/js/main.3971156d.js"
   ]
 }
