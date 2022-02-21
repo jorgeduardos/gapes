@@ -7,14 +7,17 @@ import gape from '../assets/no-laser-gape.png';
 import littleKing from '../assets/little-king.png';
 
 //roadmap v2 assets
-import tic from '../assets/roadmap/tic.png';
-import hat from '../assets/roadmap/party-hat.png';
+// import tic from '../assets/roadmap/tic.png';
+// import hat from '../assets/roadmap/party-hat.png';
 import baldie from '../assets/roadmap/baldie.png';
 import genesis from '../assets/roadmap/genesis.png';
 import spaceship from '../assets/roadmap/spaceship.png';
 import planet from '../assets/roadmap/planet.png';
 
-export default function RoadmapV2() {
+import gapesLeft from '../assets/roadmap/apes_monkes_left.png';
+import gapesRight from '../assets/roadmap/apes_monkes_right.png';
+
+export default function RoadmapV2(props) {
     gsap.registerPlugin(ScrollTrigger);
 
     // store a reference to the box div
@@ -77,10 +80,8 @@ export default function RoadmapV2() {
                 <div className="screen" ref={screenRef}></div>
             </div>
 
-            <div className="full">
-                <h2 className='is-arcade'>ROADMAP
-                    <img src={littleKing} alt="" />
-                </h2>
+            <div className="full" id='roadmap'>
+                <h2 className='is-ethno'>R<span>O<img src={littleKing} alt="" /></span>ADMAP</h2>
             </div>
 
             <div className="inner yellow">
@@ -92,11 +93,11 @@ export default function RoadmapV2() {
                     <div className="container">
                         <h4 className='is-aqua'><span>1</span> Foundation: brand Initiatives</h4>
                         <ol>
-                            <li>Establish new team for GalacticApes <span><img src={tic} alt="done" /></span></li>
-                            <li> Secure GalacticApes discord <span><img src={tic} alt="done" /></span></li>
-                            <li>Establish new moderator team <span><img src={tic} alt="done" /></span></li>
-                            <li>Re-engage Allowlist Raffles <span><img src={hat} alt="done" /></span></li>
-                            <li>Claim new domain name <span><img src={tic} alt="done" /></span></li>
+                            <li>Establish new team for GalacticApes</li>
+                            <li> Secure GalacticApes discord</li>
+                            <li>Establish new moderator team</li>
+                            <li>Re-engage Allowlist Raffles</li>
+                            <li>Claim new domain name</li>
                             <li>"Space Base" Town Hall</li>
                         </ol>
                         <div className="phase-img">
@@ -144,6 +145,14 @@ export default function RoadmapV2() {
                         <li>Charity/Community Auctions</li>
                         <li>Expanded Media Presence</li>
                     </ol>
+                </div>
+            </div>
+
+            <div className="gooh-container">
+                <div>
+                    <img src={gapesLeft} alt="" />
+                    <h4>GOOOOOOOH!</h4>
+                    <img src={gapesRight} className='right' alt="" />
                 </div>
             </div>
         </section>

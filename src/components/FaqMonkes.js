@@ -2,9 +2,9 @@ import React from 'react'
 
 export default function FaqMonkes() {
   return (
-    <section className="faqs">
+    <section className="faqs" id='faqs'>
         <div className="inner">
-            <h2 className="is-arcade is-text-center">FAQ</h2>
+            <h2 className="is-ethno is-text-center">FAQ</h2>
             <div className="faqs-container">
                 <div className="item">
                     <h3 className="h5 is-yellow">How much do they cost and what is the total supply?</h3>

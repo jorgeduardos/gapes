@@ -1,5 +1,6 @@
 section.roadmapV2 {
     margin-top: 5rem;
+    padding-bottom: 0;
 
     .laser-gape {
         position: relative;
@@ -30,28 +31,31 @@ section.roadmapV2 {
     .full {
         background-color: $yellow;
         text-align: center;
-        padding: 2rem 0 2rem;
+        padding: 4rem 0 2rem;
         margin-top: -4px;
 
         h2 {
-            line-height: 0.9;
+            line-height: 1;
             color: $black;
-            @include fontsize(12rem, 17rem, 21rem);
-            position: relative;
+            
+            span{
+                position: relative;
+                display: inline-block;
+            }
 
             img {
                 position: absolute;
-                left: 34%;
-                top: 10px;
-                width: 50px;
+                right: 0;
+                width: 30px;
+                top: -15px;
 
-                @media screen and (min-width: $tablet-BP) {
-                    width: 85px;
-                    top: -5px;
+                @media screen and (min-width: $mobile-BP){
+                    width: 40px;
                 }
 
                 @media screen and (min-width: $desktop-BP) {
-                    top: 10px;
+                    width: 65px;
+                    top: -30px;
                 }
             }
         }
@@ -75,6 +79,7 @@ section.roadmapV2 {
             }
 
             h4 {
+                text-transform: capitalize;
                 span {
                     margin-right: 1rem;
                 }
@@ -295,6 +300,73 @@ section.roadmapV2 {
             }
         }
 
+    }
+
+    .gooh-container {
+        width: 100%;
+        margin-top: 4rem;
+        // border-bottom: 8px solid #541C5C;
+
+        >div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 2rem;
+            flex-wrap: wrap;
+
+            @media screen and (min-width: $tablet-BP) {
+                padding-right: 0;
+            }
+
+            $red-gr: #EB4D49;
+            $orange-gr: #F19C5B;
+            $yellow-gr: #E1CB51;
+            $green-gr: #8CC24C;
+            $blue-gr: #3E80BF;
+
+
+            h4 {
+                width: 100%;
+                order: -1;
+                text-align: center;
+                background: linear-gradient(to bottom, $red-gr 0% 20%, $orange-gr 20% 30%, $yellow-gr 40% 50%, $green-gr 60% 70%, $blue-gr 70% 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @media screen and (min-width: 575px) {
+                    width: auto;
+                    order: unset;
+                }
+            }
+
+            img {
+                max-width: 500px;
+                align-self: flex-end;
+                width: 80%;
+                margin-left: 0;
+
+                @media screen and (min-width: 575px) {
+                    margin-left: -100px;
+                    width: 400px;
+                }
+
+                @media screen and (min-width: 690px) {
+                    margin-left: 0;
+                }
+
+                @media screen and (min-width: $tablet-BP) {
+                    width: 30vw;
+                }
+
+                &.right {
+                    display: none;
+
+                    @media screen and (min-width: $tablet-BP) {
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 
 }

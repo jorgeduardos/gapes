@@ -1,9 +1,6 @@
 section.faqs{
     h2{
-        font-size: 25rem;
-        line-height: 0.7;
         font-weight: 400;
-        @include fontsize(16rem, 20rem, 25rem);
     }
 
     .faqs-container{

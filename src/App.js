@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import Top from './components/Top';
 import {
   BrowserRouter,
   Routes,
@@ -11,6 +12,7 @@ import {
 } from "react-router-dom";
 
 function App() {
+
   return (
   <BrowserRouter basename={process.env.PUBLIC_URL}> 
       <NavBar />
@@ -19,6 +21,7 @@ function App() {
         <Route exact path="monke" element={<Monke />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Top />
       <Footer />
   </BrowserRouter>
   );

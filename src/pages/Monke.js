@@ -5,7 +5,7 @@ import Team from '../components/Team';
 
 export default function Monke() {
     return (
-        <main className='home'>
+        <main className='monke'>
             <Hero />
             <Faqs />
             <Team />

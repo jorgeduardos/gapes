@@ -40,7 +40,7 @@ export default function Roadmap() {
             </div>
 
             <div className="full">
-                <h2 className='is-arcade'>ROADMAP
+                <h2 className='is-ethno'>ROADMAP
                     <img src={littleKing} alt="" />
                 </h2>
             </div>
@@ -51,19 +51,19 @@ export default function Roadmap() {
 
             <div className="phase one">
                 <img src={shipyard} alt="Galactic Shipyard" />
-                <h3 className="is-arcade is-yellow">PHASE ONE</h3>
+                <h3 className="is-ethno is-yellow">PHASE ONE</h3>
                 <p>Activate the Galactic Shipyard</p>
             </div>
 
             <div className="phase two">
                 <img src={missions} alt="Galactic Shipyard" />
-                <h3 className="is-arcade is-yellow">PHASE TWO</h3>
+                <h3 className="is-ethno is-yellow">PHASE TWO</h3>
                 <p>Activate Missions</p>
             </div>
 
             <div className="phase three">
                 <img src={metaverse} alt="Galactic Shipyard" />
-                <h3 className="is-arcade is-yellow">BEYOND</h3>
+                <h3 className="is-ethno is-yellow">BEYOND</h3>
                 <p>Enter the metaverse</p>
             </div>
         </section>

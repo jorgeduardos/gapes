@@ -8,9 +8,15 @@
     src: url('../assets/fonts/8-bit-arcade-out.woff2');
 }
 
+@font-face {
+    font-family: 'Ethnocentric, sans-serif';
+    src: url('../assets/fonts/ethnocentric rg.ttf');
+}
+
 //fonts
 $nokia-f: 'Nokia, sans-serif';
 $arcade-f: 'Arcade, sans-serif';
+$ethno-f: 'Ethnocentric, sans-serif';
 
 /*-----------------------------------*\
     COLOR VARS
@@ -43,6 +49,7 @@ html {
     font-size: 62.5%; // 1rem = 10px
     font-weight: 400;
     font-family: $nokia-f;
+    // scroll-behavior: smooth;
 
     margin: 0;
     border: none;

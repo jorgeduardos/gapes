@@ -1,4 +1,4 @@
-import React from 'react';
+import { React } from 'react';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import GapeStrip from '../components/GapeStrip';
@@ -7,8 +7,8 @@ import Faqs from '../components/Faqs';
 import RoadmapV2 from '../components/RoadmapV2';
 import Team from '../components/Team';
 
-export default function Home() {
 
+export default function Home(props) {
 
   return (
     <main className='home'>
