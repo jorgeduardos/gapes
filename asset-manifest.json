@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gapes/static/css/main.518abf12.css",
-    "main.js": "/gapes/static/js/main.05459d8d.js",
+    "main.css": "/gapes/static/css/main.444ee944.css",
+    "main.js": "/gapes/static/js/main.4ab10c82.js",
     "static/js/787.5ece8f8d.chunk.js": "/gapes/static/js/787.5ece8f8d.chunk.js",
     "static/media/city.mp3": "/gapes/static/media/city.30ada1b23a6ffbaf6408.mp3",
     "static/media/homepage-hero-video.mp4": "/gapes/static/media/homepage-hero-video.2f6cc7289e4922ad487e.mp4",
@@ -21,7 +21,7 @@
     "static/media/heatah.png": "/gapes/static/media/heatah.0dae807d2e30b95c930c.png",
     "static/media/scrap.png": "/gapes/static/media/scrap.e2e7a377c9df49ec81aa.png",
     "static/media/juco.png": "/gapes/static/media/juco.aab0157f8d0f57f7f17a.png",
-    "static/media/no-laser-gape.png": "/gapes/static/media/no-laser-gape.4d2f61e29e16df235b74.png",
+    "static/media/laser-gape.png": "/gapes/static/media/laser-gape.4ce9086945eebad4fae0.png",
     "static/media/res.png": "/gapes/static/media/res.4222438c4bda76688e54.png",
     "static/media/planet.png": "/gapes/static/media/planet.aa81199b45d604dc0a9f.png",
     "static/media/starfield-2.png": "/gapes/static/media/starfield-2.0760e5d45ab77c1a2e50.png",
@@ -32,12 +32,12 @@
     "static/media/twitter-fill.svg": "/gapes/static/media/twitter-fill.3489cfdf20612eabffc87537b4fc7b6e.svg",
     "static/media/twitter.svg": "/gapes/static/media/twitter.ecb1dcb5dd12a12dbbbd941377fd2c0f.svg",
     "index.html": "/gapes/index.html",
-    "main.518abf12.css.map": "/gapes/static/css/main.518abf12.css.map",
-    "main.05459d8d.js.map": "/gapes/static/js/main.05459d8d.js.map",
+    "main.444ee944.css.map": "/gapes/static/css/main.444ee944.css.map",
+    "main.4ab10c82.js.map": "/gapes/static/js/main.4ab10c82.js.map",
     "787.5ece8f8d.chunk.js.map": "/gapes/static/js/787.5ece8f8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.518abf12.css",
-    "static/js/main.05459d8d.js"
+    "static/css/main.444ee944.css",
+    "static/js/main.4ab10c82.js"
   ]
 }
