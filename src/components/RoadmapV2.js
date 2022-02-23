@@ -2,8 +2,7 @@ import { React, useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import laser from '../assets/laser.png';
-import gape from '../assets/no-laser-gape.png';
+import laserGape from '../assets/laser-gape.png';
 import littleKing from '../assets/little-king.png';
 
 //roadmap v2 assets
@@ -75,8 +74,7 @@ export default function RoadmapV2(props) {
     return (
         <section className="roadmapV2">
             <div className="laser-gape" ref={scrollRef}>
-                <img src={gape} alt="" />
-                <img src={laser} alt="" className='laser' />
+                <img src={laserGape} alt="" />
                 <div className="screen" ref={screenRef}></div>
             </div>
 

@@ -26,7 +26,7 @@ export default function Hero() {
       <audio id='audioFile'>
         <source src={cityAudio} type="audio/mp3" />
       </audio>
-      <video autoPlay loop muted src={heroVideo}></video>
+      <video autoPlay playsinline loop muted src={heroVideo}></video>
       <div className={`speaker-container ${audio ? '' : 'muted'}`}>
         <img src={speaker} alt="Mute/Unmute" onClick={() => audioChange()} />
       </div>

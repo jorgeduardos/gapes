@@ -49,7 +49,7 @@ export default function NavBar() {
 
                     <a href="#faqs" onClick={scroll}>FAQs</a>
                     <a href="#team" onClick={scroll}>Team</a>
-                    <Link to={location === 'monke' ? '/' : '/monke'}>{location === 'monke' ? 'Ape' : 'Monke'}</Link>
+                    <Link to={location === 'monke' ? '/' : '/monke'} onClick={() => setNavState(!navState)} >{location === 'monke' ? 'Ape' : 'Monke'}</Link>
                 </div>
 
                 <div className="logos">

@@ -1,9 +1,13 @@
 section.hero{
     overflow: hidden;
     position: relative;
-    height: 70vh;
+    height: 50vh;
     max-height: 550px;
     text-align: center;
+
+    @media screen and (min-width: 4150px) {
+        height: 70vh;
+    }
 
     @media screen and (min-width: $tablet-BP) {
         height: auto;
