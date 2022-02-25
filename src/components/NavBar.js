@@ -59,8 +59,8 @@ export default function NavBar() {
                     <a href="https://discord.gg/galacticapes" target="_blank" rel="noreferrer">
                         <img src={discordLogo} alt="Discord" />
                     </a>
-                    <a href="https://opensea.io/collection/galacticapes" target="_blank" rel="noreferrer">
-                        <img src={osLogo} alt="Open Sea" />
+                    <a href={location === 'monke' ? 'https://opensea.io/collection/galacticmonkes' : 'https://opensea.io/collection/galacticapes'} target="_blank" rel="noreferrer">
+                        <img src={osLogo} alt={location === 'monke' ? 'Galactic Monkeys Open Sea' : 'Galactic Apes Open Sea'} />
                     </a>
                 </div>
                 <div className={`hamburger ${navState ? 'active' : ''}`} onClick={() => setNavState(!navState)}>

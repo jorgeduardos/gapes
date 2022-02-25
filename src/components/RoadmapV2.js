@@ -82,21 +82,21 @@ export default function RoadmapV2(props) {
                 <h2 className='is-ethno'>R<span>O<img src={littleKing} alt="" /></span>ADMAP</h2>
             </div>
 
-            <div className="inner yellow">
+            {/* <div className="inner yellow">
                 <p className='is-yellow is-text-center '>Your apes are not just a crew that will take you on missions throughout the Galactic Apes universe, but the start of a journey that will open the door to nft’s of all types and the Galactic Apes expansion into the Metaverse. There will be new collections, new artists, and your crew(s) will be your key to it all.</p>
-            </div>
+            </div> */}
 
             <div className="phases-container inner">
                 <div className="phase one" ref={spaceshipScrollRef}>
                     <div className="container">
-                        <h4 className='is-aqua'><span>1</span> Foundation: brand Initiatives</h4>
+                        <h4 className='is-aqua'><span>1</span> Foundation: Brand Initiatives</h4>
                         <ol>
                             <li>Establish new team for GalacticApes</li>
-                            <li> Secure GalacticApes discord</li>
+                            <li>Secure GalacticApes discord</li>
                             <li>Establish new moderator team</li>
-                            <li>Re-engage Allowlist Raffles</li>
+                            <li>Re-engage whitelist raffles</li>
                             <li>Claim new domain name</li>
-                            <li>"Space Base" Town Hall</li>
+                            <li>"Space Base" Townhall</li>
                         </ol>
                         <div className="phase-img">
                             <img src={baldie} alt="St. Baldie" />
@@ -116,7 +116,7 @@ export default function RoadmapV2(props) {
                     <ol>
                         <li>Secure GalacticApes contract and IP</li>
                         <li> Secure legal council for new entity </li>
-                        <li>Website Migration</li>
+                        <li>Website migration</li>
                         <li>Create new social media accounts</li>
                         <li>Gamification/Tokenomics</li>
                     </ol>
@@ -137,11 +137,11 @@ export default function RoadmapV2(props) {
                     <h4 className='is-green'><span>3</span> Exploration: in progress</h4>
                     <ol>
                         <li>Community DAO</li>
-                        <li>VX Development</li>
+                        <li>VX development</li>
                         <li>Land and Metaverse integration</li>
-                        <li>IRL/Metaverse Merch</li>
-                        <li>Charity/Community Auctions</li>
-                        <li>Expanded Media Presence</li>
+                        <li>IRL/Metaverse merch</li>
+                        <li>Charity/Community auctions</li>
+                        <li>Expanded media presence</li>
                     </ol>
                 </div>
             </div>
