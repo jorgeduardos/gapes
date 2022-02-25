@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gapes/static/css/main.444ee944.css",
-    "main.js": "/gapes/static/js/main.a687af5a.js",
+    "main.css": "/gapes/static/css/main.04c77ee9.css",
+    "main.js": "/gapes/static/js/main.00445d02.js",
     "static/js/787.5ece8f8d.chunk.js": "/gapes/static/js/787.5ece8f8d.chunk.js",
     "static/media/city.mp3": "/gapes/static/media/city.30ada1b23a6ffbaf6408.mp3",
     "static/media/homepage-hero-video.mp4": "/gapes/static/media/homepage-hero-video.2f6cc7289e4922ad487e.mp4",
@@ -32,12 +32,12 @@
     "static/media/twitter-fill.svg": "/gapes/static/media/twitter-fill.3489cfdf20612eabffc87537b4fc7b6e.svg",
     "static/media/twitter.svg": "/gapes/static/media/twitter.ecb1dcb5dd12a12dbbbd941377fd2c0f.svg",
     "index.html": "/gapes/index.html",
-    "main.444ee944.css.map": "/gapes/static/css/main.444ee944.css.map",
-    "main.a687af5a.js.map": "/gapes/static/js/main.a687af5a.js.map",
+    "main.04c77ee9.css.map": "/gapes/static/css/main.04c77ee9.css.map",
+    "main.00445d02.js.map": "/gapes/static/js/main.00445d02.js.map",
     "787.5ece8f8d.chunk.js.map": "/gapes/static/js/787.5ece8f8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.444ee944.css",
-    "static/js/main.a687af5a.js"
+    "static/css/main.04c77ee9.css",
+    "static/js/main.00445d02.js"
   ]
 }
