@@ -1,36 +1,35 @@
-section.team{
+section.team {
+  text-align: center;
+  margin-top: 7rem;
 
-    text-align: center;
-    margin-top: 7rem;
+  .team-container {
+    display: grid;
+    margin: 0 auto;
+    margin-top: 5rem;
+    grid-template-rows: auto;
+    max-width: 1100px;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
 
-    .team-container{
-        display: grid;
-        margin: 0 auto;
-        margin-top: 5rem;
-        grid-template-rows: auto;
-        max-width: 1100px;
-        grid-template-columns: 1fr;
-        row-gap: 4rem;
-
-        @media screen and (min-width: $mobile-BP) {
-            grid-template-columns: repeat(3, 1fr);
-            column-gap: 4rem;
-        }
-
-        .member{
-            img{
-                width: 300px;
-                @media screen and (min-width: $mobile-BP) {
-                    width: 100%;
-                }
-            }
-            h3{
-                margin-top: 2rem;
-            }
-
-            .twitter-img{
-                width: 30px;
-            }
-        }
+    @media screen and (min-width: $mobile-BP) {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 4rem;
     }
+
+    .member {
+      img {
+        width: 300px;
+        @media screen and (min-width: $mobile-BP) {
+          width: 100%;
+        }
+      }
+      h3 {
+        margin-top: 2rem;
+      }
+
+      .twitter-img {
+        width: 30px;
+      }
+    }
+  }
 }

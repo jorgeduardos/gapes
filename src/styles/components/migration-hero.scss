@@ -1,0 +1,116 @@
+.migration-section {
+  margin: 0 3rem;
+  text-align: center;
+}
+
+.migration-header {
+  margin-top: 14rem;
+  color: $yellow;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 4rem 5%;
+}
+
+.box-container {
+  padding: 2rem;
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+  margin: 0 0 2rem 0;
+}
+
+.box-container h4 {
+  margin: 0;
+  color: $aqua;
+}
+
+.box-status {
+  margin: 2rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.approve-button {
+  background: transparent;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 0;
+  border: 2px solid white;
+  color: white;
+  font-family: "Nokia, sans-serif";
+  cursor: pointer;
+}
+
+.approve-button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.button {
+  background: transparent;
+  padding: 1rem 2rem;
+  margin: 0rem 0 0 2rem;
+  border: 2px solid $green;
+  color: $green;
+  font-family: "Nokia, sans-serif";
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.box-status.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.box-status input {
+  max-width: 14rem;
+  padding: 1rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: "Nokia, sans-serif";
+}
+
+.box-status input::placeholder {
+  color: gray;
+}
+
+.connect-wallet {
+  background: transparent;
+  padding: 1rem 2rem;
+  margin: 2rem 0 0 0;
+  border: 2px solid white;
+  color: white;
+  font-family: "Nokia, sans-serif";
+  cursor: pointer;
+}
+
+.connect-wallet:disabled {
+  opacity: 0.8;
+}
+
+.success-text {
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+.success-text a {
+  color: $pink;
+}
+
+.error {
+  font-size: 1rem;
+  color: $red;
+  margin-top: 2rem;
+}

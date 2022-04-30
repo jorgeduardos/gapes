@@ -1,15 +1,15 @@
-main.home{
-    background-image: url(../../assets/starfield-2.png);
-    background-size: contain;
+main.home {
+  background-image: url(../../assets/starfield-2.png);
+  background-size: contain;
 
-    section.team{
-        margin-top: 0;
-        padding-top: 0;
+  section.team {
+    margin-top: 0;
+    padding-top: 0;
 
-        h2{
-            background-color: $aqua;
-            padding: 4rem 0;
-            color: $black;
-        }
+    h2 {
+      background-color: $aqua;
+      padding: 4rem 0;
+      color: $black;
     }
+  }
 }

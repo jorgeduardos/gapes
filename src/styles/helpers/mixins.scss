@@ -1,40 +1,40 @@
 /*-----------------------------------*\
 	TYPOGRAPHY
 \*-----------------------------------*/
-@mixin fontsize($fsm, $fst, $fsd){
-    font-size: $fsm;
-    @media screen and (min-width: $tablet-BP){
-        font-size: $fst; 
-    }
-    @media screen and (min-width: $desktop-BP){
-        font-size: $fsd; 
-    }
+@mixin fontsize($fsm, $fst, $fsd) {
+  font-size: $fsm;
+  @media screen and (min-width: $tablet-BP) {
+    font-size: $fst;
+  }
+  @media screen and (min-width: $desktop-BP) {
+    font-size: $fsd;
+  }
 }
 
 /*-----------------------------------*\
 	LINE HEIGHT
 \*-----------------------------------*/
-@mixin lineheight($lhm, $lht, $lhd){
-    line-height: $lhm;
-    @media screen and (min-width: $tablet-BP){
-        line-height: $lht; 
-    }
-    @media screen and (min-width: $desktop-BP){
-        line-height: $lhd; 
-    }
+@mixin lineheight($lhm, $lht, $lhd) {
+  line-height: $lhm;
+  @media screen and (min-width: $tablet-BP) {
+    line-height: $lht;
+  }
+  @media screen and (min-width: $desktop-BP) {
+    line-height: $lhd;
+  }
 }
 
 /*-----------------------------------*\
 	LETTER SPACING
 \*-----------------------------------*/
-@mixin letterSpacing($lsm, $lst, $lsd){
-    letter-spacing: $lsm;
-    @media screen and (min-width: $tablet-BP){
-        letter-spacing: $lst;
-    }
-    @media screen and (min-width: $desktop-BP){
-        letter-spacing: $lsd;
-    }
+@mixin letterSpacing($lsm, $lst, $lsd) {
+  letter-spacing: $lsm;
+  @media screen and (min-width: $tablet-BP) {
+    letter-spacing: $lst;
+  }
+  @media screen and (min-width: $desktop-BP) {
+    letter-spacing: $lsd;
+  }
 }
 
 /*-----------------------------------*\
@@ -42,11 +42,11 @@
     @see: https://stackoverflow.com/questions/17982111/sass-variable-in-css-calc-function
 \*-----------------------------------*/
 @mixin emulatedFlexGap($gap) {
-    display: inline-flex;
-    flex-wrap: wrap;
-    margin: calc(-1 * #{$gap}) 0 0 calc(-1 * #{$gap});
-    width: calc(100% + #{$gap});
-    & > * {
-        margin: $gap 0 0 $gap;
-    }
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * #{$gap}) 0 0 calc(-1 * #{$gap});
+  width: calc(100% + #{$gap});
+  & > * {
+    margin: $gap 0 0 $gap;
+  }
 }

@@ -1,77 +1,74 @@
-section.hero{
-    overflow: hidden;
-    position: relative;
-    height: 50vh;
-    max-height: 550px;
-    text-align: center;
+section.hero {
+  overflow: hidden;
+  position: relative;
+  height: 50vh;
+  max-height: 550px;
+  text-align: center;
 
-    @media screen and (min-width: 4150px) {
-        height: 70vh;
-    }
+  @media screen and (min-width: 4150px) {
+    height: 70vh;
+  }
+
+  @media screen and (min-width: $tablet-BP) {
+    height: auto;
+    max-height: unset;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 
     @media screen and (min-width: $tablet-BP) {
-        height: auto;
-        max-height: unset;
+      height: auto;
+      max-height: auto;
     }
+  }
 
-    video{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-
-        @media screen and (min-width: $tablet-BP) {
-            height: auto;
-            max-height: auto;
-        }
-    
+  @keyframes logoAnim {
+    to {
+      opacity: 1;
+      transform: translateY(0%);
     }
+  }
 
-    @keyframes logoAnim {
-        to{
-            opacity: 1;
-            transform: translateY(0%);
-        }
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to bottom, #000, rgb(0 0 0 / 0));
+  }
 
-    &:before{
-        content: '';
+  .speaker-container {
+    position: absolute;
+    right: 2rem;
+    z-index: 1;
+    transform: translateY(-100%);
+    bottom: 2rem;
+
+    &.muted {
+      &:before {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 50%;
-        background-image: linear-gradient(to bottom, #000, rgb(0 0 0 / 0));
-    }
-
-    .speaker-container{
-        position: absolute;
-        right: 2rem;
+        content: "";
+        height: 3px;
+        top: 0%;
+        left: 30%;
+        margin: 0 auto;
+        width: 120%;
+        transform: rotate(-45deg) translateX(-50%);
         z-index: 1;
-        transform: translateY(-100%);
-        bottom: 2rem;
-
-       
-
-        &.muted{
-            &:before{
-                position: absolute;
-                content: '';
-                height: 3px;
-                top: 0%;
-                left: 30%;
-                margin: 0 auto;
-                width: 120%;
-                transform: rotate(-45deg) translateX(-50%);
-                z-index: 1;
-                background-color: white;
-            }
-        }
-
-        img{
-            width: 30px;
-            cursor: pointer;
-            height: 30px;
-        }
+        background-color: white;
+      }
     }
+
+    img {
+      width: 30px;
+      cursor: pointer;
+      height: 30px;
+    }
+  }
 }
