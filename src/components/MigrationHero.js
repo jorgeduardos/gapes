@@ -6,9 +6,9 @@ import useContract from "../hooks/useContract";
 import ERC1155ABI from "../contracts/ERC1155.json";
 import ERC721ABI from "../contracts/ERC721.json";
 
-const OPENSTORE_ADDRESS = "0x15489Af3F5b3731d9F0ddA49C0f964A4EE3B0e78"; //"0x495f947276749Ce646f68AC8c248420045cb7b5e";
-const GAPES_OLD_ADDRESS = "0x20e21bbE4768CcaFB3A32b2b60cfA0745D887B19";
-const MIGRATE_ADDRESS = "0xFADDd3f4506DC2048B9C1f9BF43F0Ca303B6e9A0";
+const OPENSTORE_ADDRESS = "0x6bf0B2674aC1215153727F5d634f63563db82cFC"; //"0x495f947276749Ce646f68AC8c248420045cb7b5e";
+const GAPES_OLD_ADDRESS = "0x49ee15B6fda95DeE7C4438E894BB228d6f898240";
+const MIGRATE_ADDRESS = "0xD24f02b36fb432ddF208958eEC04e1E843459D73";
 
 const etherscanMapping = {
   1: "https://etherscan.io",
@@ -247,11 +247,11 @@ export default function MigrationHero() {
             />
             <button
               className="button"
-              disabled={
-                genesisApeId.length !==
-                "101081017895652826051875053334865626204918664514603414527482041280082611273729"
-                  .length
-              }
+              // disabled={
+              //   genesisApeId.length !==
+              //   "101081017895652826051875053334865626204918664514603414527482041280082611273729"
+              //     .length
+              // }
               onClick={() => migrateGenesis()}
             >
               {genesisMigrationLoading ? "Migrating..." : "Migrate"}
