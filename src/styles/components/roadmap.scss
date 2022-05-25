@@ -1,75 +1,74 @@
 section.roadmap {
-    margin-top: 5rem;
+  margin-top: 5rem;
 
-    .laser-gape {
-        position: relative;
+  .laser-gape {
+    position: relative;
 
-        img {
-            width: 100%;
-        }
-
-        .laser {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-
-        .screen {
-            position: absolute;
-            content: "";
-            width: 74%;
-            height: 12.6%;
-            background-color: black;
-            top: 38.7%;
-            left: 0;
-        }
-
+    img {
+      width: 100%;
     }
 
-    .full {
-        background-color: $yellow;
-        text-align: center;
-        padding: 2rem 0 2rem;
-        margin-top: -4px;
+    .laser {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
 
-        h2 {
-            line-height: 0.9;
-            color: $black;
-            @include fontsize(12rem, 17rem, 21rem);
-            position: relative;
+    .screen {
+      position: absolute;
+      content: "";
+      width: 74%;
+      height: 12.6%;
+      background-color: black;
+      top: 38.7%;
+      left: 0;
+    }
+  }
 
-            img {
-                position: absolute;
-                left: 34%;
-                top: 10px;
-                width: 50px;
+  .full {
+    background-color: $yellow;
+    text-align: center;
+    padding: 2rem 0 2rem;
+    margin-top: -4px;
 
-                @media screen and (min-width: $tablet-BP) {
-                    width: 85px;
-                    top: -5px;
-                }
+    h2 {
+      line-height: 0.9;
+      color: $black;
+      @include fontsize(12rem, 17rem, 21rem);
+      position: relative;
 
-                @media screen and (min-width: $desktop-BP) {
-                    top: 10px;
-                }
-            }
+      img {
+        position: absolute;
+        left: 34%;
+        top: 10px;
+        width: 50px;
+
+        @media screen and (min-width: $tablet-BP) {
+          width: 85px;
+          top: -5px;
         }
-    }
 
-    .inner {
-        margin-top: 8rem;
-    }
-
-    .phase {
-        max-width: 1050px;
-        margin: 0 auto;
-        margin: 0 auto;
-        margin-top: 7rem;
-        text-align: center;
-
-        img {
-            width: 100%;
+        @media screen and (min-width: $desktop-BP) {
+          top: 10px;
         }
+      }
     }
+  }
+
+  .inner {
+    margin-top: 8rem;
+  }
+
+  .phase {
+    max-width: 1050px;
+    margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 7rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+    }
+  }
 }

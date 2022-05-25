@@ -1,31 +1,31 @@
-section.faqs{
-    h2{
-        font-weight: 400;
+section.faqs {
+  h2 {
+    font-weight: 400;
+  }
+
+  .faqs-container {
+    display: grid;
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 4rem;
+
+    @media screen and (min-width: $desktop-BP) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 5rem;
     }
+  }
 
-    .faqs-container{
-        display: grid;
-        margin-top: 5rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        row-gap: 4rem;
+  .item {
+    text-align: center;
 
-        @media screen and (min-width: $desktop-BP) {
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 5rem;
-        }
+    ul {
+      text-align: center;
+      margin: 0 auto;
+      list-style-position: inside;
+      padding-left: 0;
+      margin-top: 1rem;
+      @include fontsize(1.7rem, 1.7rem, 1.7rem);
     }
-
-    .item{
-        text-align: center;
-
-        ul{
-            text-align: center;
-            margin: 0 auto;
-            list-style-position: inside;
-            padding-left: 0;
-            margin-top: 1rem;
-            @include fontsize(1.7rem, 1.7rem, 1.7rem);
-        }
-    }
+  }
 }
