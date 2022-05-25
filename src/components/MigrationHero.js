@@ -5,19 +5,18 @@ import useENSName from "../hooks/useENSName";
 import useContract from "../hooks/useContract";
 import ERC1155ABI from "../contracts/ERC1155.json";
 import ERC721ABI from "../contracts/ERC721.json";
+import { UserRejectedRequestError } from "@web3-react/injected-connector";
 
-const OPENSTORE_ADDRESS = "0x6bf0B2674aC1215153727F5d634f63563db82cFC"; //"0x495f947276749Ce646f68AC8c248420045cb7b5e";
-const GAPES_OLD_ADDRESS = "0x49ee15B6fda95DeE7C4438E894BB228d6f898240";
-const MIGRATE_ADDRESS = "0xD24f02b36fb432ddF208958eEC04e1E843459D73";
+const OPENSTORE_ADDRESS = "0x495f947276749Ce646f68AC8c248420045cb7b5e";
+const GAPES_OLD_ADDRESS = "0x12d2D1beD91c24f878F37E66bd829Ce7197e4d14";
+const MIGRATE_ADDRESS = "0x495f947276749Ce646f68AC8c248420045cb7b5e"; //TODO: change here
 
 const etherscanMapping = {
   1: "https://etherscan.io",
-  4: "https://rinkeby.etherscan.io",
 };
 
 const openSeaMapping = {
   1: "https://opensea.io",
-  4: "https://testnets.opensea.io",
 };
 
 function shortenHex(hex, length = 4) {
@@ -59,12 +58,21 @@ export default function MigrationHero() {
 
   useEffect(() => {
     if (GENESIS_CONTRACT && GAPES_CONTRACT && account) {
+      GENESIS_CONTRACT.balanceOf(
+        "0xF7c3ed5ae30561C65b3cd13cc265A5753Ba212Ef",
+        "101081017895652826051875053334865626204918664514603414527482041288878704295937"
+      )
+        .then((result) => {
+          console.log(result);
+        })
+        .catch((e) => console.error(e));
       GENESIS_CONTRACT.isApprovedForAll(account, MIGRATE_ADDRESS)
         .then((result) => {
           console.log(result);
           setGenesisApproval(result);
         })
         .catch((e) => console.error(e));
+
       GAPES_CONTRACT.isApprovedForAll(account, MIGRATE_ADDRESS)
         .then((result) => {
           console.log(result);
@@ -201,7 +209,6 @@ export default function MigrationHero() {
         disabled={connecting}
         onClick={() => {
           setConnecting(true);
-
           activate(injected, undefined, true)
             .then(() => setConnecting(false))
             .catch((error) => {
@@ -215,17 +222,17 @@ export default function MigrationHero() {
             });
         }}
       >
-        {account
-          ? ENSName || `${shortenHex(account, 4)}`
-          : chainId !== 1
-          ? "Change to Mainnet"
-          : "Connect to Wallet"}
+        {account ? ENSName || `${shortenHex(account, 4)}` : "Connect Wallet"}
       </button>
       {error && <p>{error}</p>}
       <div className="container">
         <div className="box-container">
           <h4>Migrate Genesis Ape</h4>
           <p>Migrate your Genesis Ape by pasting your Genesis Ape unique ID.</p>
+          <p className="warning-text">
+            MAKE SURE TO USE TOKEN ID FROM OPENSEA DETAILS DROPDOWN **NOT
+            OVERHEAD TOKEN ID**
+          </p>
           <button
             className="approve-button"
             onClick={() => setApproveForAll("genesis")}
@@ -247,11 +254,11 @@ export default function MigrationHero() {
             />
             <button
               className="button"
-              // disabled={
-              //   genesisApeId.length !==
-              //   "101081017895652826051875053334865626204918664514603414527482041280082611273729"
-              //     .length
-              // }
+              disabled={
+                genesisApeId.length !==
+                "101081017895652826051875053334865626204918664514603414527482041280082611273729"
+                  .length
+              }
               onClick={() => migrateGenesis()}
             >
               {genesisMigrationLoading ? "Migrating..." : "Migrate"}
@@ -291,6 +298,10 @@ export default function MigrationHero() {
         <div className="box-container">
           <h4>Migrate Galactic Ape</h4>
           <p>Migrate your Galactic Ape by pasting tokenID (0 - 9997).</p>
+          <p className="warning-text">
+            MAKE SURE TO USE TOKEN ID FROM OPENSEA DETAILS DROPDOWN **NOT
+            OVERHEAD TOKEN ID**
+          </p>
           <button
             className="approve-button"
             onClick={() => setApproveForAll("gape")}

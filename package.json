@@ -2,7 +2,7 @@
   "name": "gapes",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jorgeduardos.github.io/gapes/",
+  "homepage": "",
   "dependencies": {
     "@ethersproject/contracts": "^5.6.0",
     "@ethersproject/providers": "^5.6.4",
