@@ -9,7 +9,7 @@ import { UserRejectedRequestError } from "@web3-react/injected-connector";
 
 const OPENSTORE_ADDRESS = "0x495f947276749Ce646f68AC8c248420045cb7b5e";
 const GAPES_OLD_ADDRESS = "0x12d2D1beD91c24f878F37E66bd829Ce7197e4d14";
-const MIGRATE_ADDRESS = "0x495f947276749Ce646f68AC8c248420045cb7b5e"; //TODO: change here
+const MIGRATE_ADDRESS = "0xAcf616F03bDfbF42C96e9B17bf0c832A54403C6E";
 
 const etherscanMapping = {
   1: "https://etherscan.io",
@@ -271,7 +271,7 @@ export default function MigrationHero() {
               View your transaction on{" "}
               <a
                 href={`${
-                  etherscanMapping[chainId ? chainId : 1]
+                  etherscanMapping[1]
                 }/tx/${migrationGenesisTxHash}`}
                 target="_blank"
                 rel="noreferrer"
@@ -285,7 +285,7 @@ export default function MigrationHero() {
               View your migrated ape on{" "}
               <a
                 href={`${
-                  openSeaMapping[chainId ? chainId : 1]
+                  openSeaMapping[1]
                 }/assets/${MIGRATE_ADDRESS}/${migratedGenesis}`}
                 target="_blank"
                 rel="noreferrer"
@@ -336,7 +336,7 @@ export default function MigrationHero() {
               View your transaction on{" "}
               <a
                 href={`${
-                  etherscanMapping[chainId ? chainId : 1]
+                  etherscanMapping[1]
                 }/tx/${migrationTxHash}`}
                 target="_blank"
                 rel="noreferrer"
@@ -350,7 +350,7 @@ export default function MigrationHero() {
               View your migrated ape on{" "}
               <a
                 href={`${
-                  openSeaMapping[chainId ? chainId : 1]
+                  openSeaMapping[1]
                 }/assets/${MIGRATE_ADDRESS}/${migratedGape}`}
                 target="_blank"
                 rel="noreferrer"
